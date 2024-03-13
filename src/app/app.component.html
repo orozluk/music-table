@@ -1,0 +1,15 @@
+<div class="px-5 display-3 bg-primary text-white-50">{{this.title}}</div>
+
+<div class="container-fluid">
+  <ng-container *ngFor="let scene of this.scenes">
+      <div class="px-4 py-2 fs-3  bg-secondary">
+          Escena {{scene}}
+      </div>
+        <div class="d-flex flex-row flex-wrap bg-secondary">
+          <ng-container *ngFor="let item of this.getComponentsScene(scene)">
+            <app-musical-item #musicalItem [title]="item.name" [scene]="item.scene" [description]="item.description" [audioSource]="'/assets/mp3/' + item.source"/>
+          </ng-container>
+        </div>
+  </ng-container>
+</div>
+<div class="fixed-bottom text-white-50 fs-6">Version 1 - 2024 / orozek</div>

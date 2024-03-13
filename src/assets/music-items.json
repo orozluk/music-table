@@ -1,0 +1,17 @@
+{
+  "title": "mi obra",
+  "music": [
+    {
+      "name": "Sonata No.5",
+      "scene": 1,
+      "source": "good-environment-127218.mp3",
+      "description" : "Suena cuando aparece el héroe"
+    },
+    {
+      "name": "Sonata No.7",
+      "scene": 2,
+      "source": "sleep-swet-classical-piano-140264.mp3",
+      "description" : "suena al final de la escena"
+    }
+  ]
+}

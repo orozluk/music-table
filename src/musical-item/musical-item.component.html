@@ -1,0 +1,11 @@
+<mat-card class="mat-elevation-z4 m-2">
+  <mat-card-header>
+    <mat-card-title>32{{title}}</mat-card-title>
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content >
+    <audio #audio controls id="audio-{{title}}" (play)="onPlay($event)">
+      <source src="{{audioSource}}" type="audio/mpeg"/>
+    </audio>
+  </mat-card-content>
+</mat-card>
